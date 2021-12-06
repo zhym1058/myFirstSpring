@@ -1,4 +1,4 @@
-package com.example.demo.persist;
+package com.example.demo.pojo;
 
 import org.apache.ibatis.type.Alias;
 

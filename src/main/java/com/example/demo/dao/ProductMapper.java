@@ -1,5 +1,7 @@
-package com.example.demo.persist;
+package com.example.demo.dao;
 
+import com.example.demo.pojo.Product;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

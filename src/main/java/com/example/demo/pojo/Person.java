@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.pojo;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.sun.istack.internal.NotNull;
