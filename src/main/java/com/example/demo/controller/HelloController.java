@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 
+import com.example.aaa.Dog;
 import com.example.demo.pojo.Person;
 import com.example.demo.dao.ProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,9 @@ public class HelloController {
     @Autowired
     private ProductMapper productMapper;
 
+    @Autowired
+    private Dog dog;
+
     @ResponseBody
     @RequestMapping("/hello")
     public String hello(){
@@ -27,8 +31,9 @@ public class HelloController {
     public Person displayPerson(){
         Long id = 1L;
         productMapper.getProduct(id);
-        System.out.println(productMapper.getProduct(id));
+        System.out.println(productMapper.getProduct(id).getProductName());
         System.out.println(person.getInformation());
+        System.out.println(dog.getName());
         return person;
     }
 
